@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Site Title
+title: Bhavna Soman
 locale: en_US
-description: Describe your website here.
+description: Threat Intelligence-Data-Software
 logo: site-logo.png
 search: true
 url: 
@@ -32,18 +32,14 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Your Name
+  name: Bhavna Soman
   avatar: bio-photo.jpg
-  email: you@email.com
+  email: firstname[dot]lastname at gmail
   disqus-shortname:
-  twitter: #username
-  facebook: #username
-  github: #username
+  twitter: bsoman3
+  github: bsoman3
   stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
-  instagram: #username
-  flickr: #username
-  tumblr: #username
+  linkedin: bhavna.soman
   google:
     plus: #username
     analytics:
