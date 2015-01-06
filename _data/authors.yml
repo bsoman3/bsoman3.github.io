@@ -1,20 +1,12 @@
 # Authors
 
-billy_rick:
-  name: Billy Rick
-  web: http://thewhip.com
-  email: billy@rick.com
+bhavna_soman:
+  name: Bhavna Soman
+  web: http://bhavnasoman.com
+  email: firstname[dot]lastname@gmail.com
   bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: bio-photo-2.jpg
-  twitter: extravagantman
-  google:
-    plus: BillyRick
-
-cornelius_fiddlebone:
-  name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
   avatar: bio-photo.jpg
-  twitter: rhymeswithsackit
+  twitter: bsoman3
   google:
-    plus: CorneliusFiddlebone
+    plus: BhavnaSoman
+
