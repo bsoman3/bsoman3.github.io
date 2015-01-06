@@ -1,5 +1,5 @@
 ### bsoman3.github.io
-Portfolio Website for Sourabh Bajaj. All the data is personal.
+Portfolio Website for Bhavna Soman. All the data is personal.
 
 ### Link
 [http://www.bhavnasoman.com](http://www.bhavnasoman.com)
