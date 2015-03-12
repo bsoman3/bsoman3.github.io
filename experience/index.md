@@ -1,9 +1,9 @@
 ---
 layout: page
-title: ""
+title: "Experience"
 date: 
 modified:
-excerpt:
+excerpt: "Work Experience"
 image:
   feature:
 ---

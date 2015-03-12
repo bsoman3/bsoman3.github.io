@@ -14,3 +14,4 @@ However all the code and files are MIT Licensed, and you can use this as a templ
 
 ### Credits
 This site was created using the "So Simple" theme by Michael Rose at [mademistakes.com](http://mademistakes.com)
+The timeline was adapted from Sebastiano Guerriero [http://codyhouse.co/gem/vertical-timeline/](http://codyhouse.co/gem/vertical-timeline/)

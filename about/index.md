@@ -4,9 +4,7 @@ title: About Me
 excerpt: "Bhavna Soman's Personal Blog"
 modified: 2014-08-08T19:44:38.564948-04:00
 image:
-  feature: so-simple-sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: about-image.jpg
 ---
 
 Hey there! I am a security researcher and software developer who likes to play with data.
@@ -24,4 +22,7 @@ Hey there! I am a security researcher and software developer who likes to play w
 
 [^1]: Example: *domain.com/category-name/post-title*
 
+How to give credit to photographer-- include lines below right after "feature" in "image"
+  credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 -->
