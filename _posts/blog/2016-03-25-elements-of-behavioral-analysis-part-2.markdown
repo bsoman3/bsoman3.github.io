@@ -10,7 +10,7 @@ image:
 date: 2016-03-25T17:41:48-07:00
 ---
 
-The challenge with learning to reverse stuff (if you're like me, going through books, online courses etc.) is this -- the course or book will give you a tamed binary. And you can use the techniques/steps laid out in the chapter/video and you will see the magic happen as planned. Things will decrypt, needles in the haystack will found as soon as you hit enter, all the secrets will be revealed. But when you want to have some fun of your own with it, before you know it you will go down a deep well of non-ascII chars, IDA views, and assembly code that makes no sense, dream about them and maybe (if you have some sanity left) walk away to lick your wounds.
+The challenge with learning to reverse stuff (if you're like me, going through books, online courses etc.) is this -- the course or book will give you a tamed binary. And you can use the techniques/steps laid out in the chapter/video and you will see the magic happen as planned. Things will decrypt, needles in the haystack will be found as soon as you hit enter, all the secrets will be revealed. But when you want to have some fun of your own with it, before you know it you will go down a deep well of non-ascII chars, IDA views, and assembly code that makes no sense, dream about them and maybe (if you have some sanity left) walk away to lick your wounds.
 
 This is precisely what happened to me. I was minding my own business reversing brbbot as per instructions, and everything was dandy. I was able to decrypt the config file like so :
 
