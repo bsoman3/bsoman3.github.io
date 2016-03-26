@@ -12,7 +12,7 @@ url:
 
 permalink:   /:categories/:title/
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
@@ -33,7 +33,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Bhavna Soman
-  avatar: bio-photo.jpg
+  avatar: bio-photo.png
   email: firstname[dot]lastname at gmail
   disqus-shortname:
   twitter: bsoman3

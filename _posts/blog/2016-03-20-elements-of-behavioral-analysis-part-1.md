@@ -11,7 +11,7 @@ date: 2016-03-20T22:44:28-07:00
 ---
 Here begins a month long initiative to REVERSE ALL THINGS!! and kind of keep myself accountable to it (and also, get better at this).
 
-The sample that I looked at was brbbot. I won’t do a full behavior analysis of this (cause lets face it, who cares about that) (for those who are interested (after all these years? really?), it can be found <a href=" http://andrewjkerr.com/assets/documents/CIS4930Practical2Writeup.pdf">here</a> (also, google!). ‘Cause let’s face it, as sarcastic as I can’t help sounding, I really want you to love me!!).
+The sample that I looked at was brbbot. I won’t do a full behavior analysis of this (cause lets face it, who cares about that) (for those who are interested (after all these years? really?), it can be found <a href=" http://andrewjkerr.com/assets/documents/CIS4930Practical2Writeup.pdf">here</a> (also, google!). Because, as sarcastic as I can’t help sounding, I really want you to love me!!).
 
 Anyhoo, I’m going to slice the data a bit differently (and hopefully usefully) for those who want some insights into the ideas behind reversing.
 
@@ -24,6 +24,7 @@ End point behavior can be broken into:
     - Threads starting/ending
     - DLLs and device drivers loaded
     - System calls made
+    - Mutexes created, etc.
 - Registry action
     - Which registry keys are created, deleted, queried and read.
 - File system action
@@ -42,14 +43,12 @@ With our trusty tools, we got a bunch of noise, but were able to see the followi
 It tried to copy itself to the system32 directory, but was denied access.
 <figure>
     <a href="/images/system32 access denied.png"><img src="/images/system32 access denied.png" alt="image"></a>
-    <figcaption>brbbot can't create its image in system32</figcaption>
 </figure>
 
 It also created an encrypted config file brbbot.tmp
 
 <figure>
     <a href="/images/brbbot.tmp.png"><img src="/images/brbbot.tmp.png" alt="image"></a>
-    <figcaption>brbbot creates its config file</figcaption>
 </figure>
 
 Other analyses of this malware have found evidence that it adds itself to the  HKLM\Software\Microsoft\Windows\CurrentVersion\Run registry to establish its persistence. I did not find this in my analysis. So I was curious if this sample did anything else to establish persistence.
@@ -64,6 +63,13 @@ I did find 2 things of interest from just a forensics perspective though.
 Both these elements could be used to check for recently run processes by malware, rookits and what not.
 
 That's it for today folks! Tune in again tomorrow night, same time, same channel! Until then!
+
+###### Update:
+So, I mucked up a bit. The binary didnt copy itself to System32 because I didnt run the malware with admin perms in my VM. Sorry. Once I did that, things fell into place. It also established persistence as advertised else where. Here is the autoruns snapshot that shows it.
+
+<figure>
+    <a href="/images/autoruns1.png"><img src="/images/autoruns1.png" alt="image"></a>
+</figure>
 
 Bibliography:
 
