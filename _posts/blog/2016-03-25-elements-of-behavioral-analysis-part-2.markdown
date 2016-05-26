@@ -52,7 +52,6 @@ but that did not work. I thought I could dive into Ollydbg and reverse the forma
 
 Suffice to say that I spun my wheels at ollyDbg for about 4 hours before acknowledging that this is probably the limit of my reversing skills today. Or I need to switch to IDA for a bit and see if it can help me do more.
 
-Hate this feeling. So here's the deal. By the end of the April 2016, I will either have learnt enough to do this on my own, or I will track down someone who can teach me.
-OR will know why it cannot be done.
+Hate this feeling.
 
 Until next time!
