@@ -8,13 +8,7 @@ image:
     feature:
 date: 2016-05-25T19:12:05-07:00
 ---
-*"I’m gonna go out and smoke a cigarette"*
-
-*"Who’s the wolf, who’s the blue whale, and who’s the Raven?"*
-
-*"Wha’dya mean?..... Okay, I’ll think about it and tell you."*
-
-Clearly I go to a weird coffee shop to write my blargs. It's windows rootkits today.
+It's windows rootkits day today.
 
 Rootkits can be of several types depending on the privilege ring in which they operate, ranging from user mode (Ring 3) all the way down to firmware and hardware based. Let’s stick with user mode for now. This kind manipulates code residing in userspace.
 
@@ -28,10 +22,6 @@ Rootkitting (as used here) is the process by which an evil process will modify t
 
     * There are a bunch of other ways to do DLL injection— using SuspendThread, or NTSuspendThread, using system-level shims etc. For future posts.
 * API Hooking — which is the part that watches for the sys_calls pertaining to the functionality the rootkit wants to modify and redirects those calls to the rootkit code to do with it what it may
-
-*“My dad used to tell me that my grandpa’s favorite animal was raven”*
-
-*“I had a dream one time. it was totally weird. I was on a beach and there were beached whales on that beach. So I called my friends with cranes.    And we saved the whales. So we saved the whales dude”*
 
 
 So I have a tool called kinject.exe (details here— <a href="https://www.aldeid.com/wiki/KInject">https://www.aldeid.com/wiki/KInject</a>). It is supposed to inject an arbit DLL into and arbit process. I loaded it into ollydbg. It needs a few arguments— the name of the process to inject in, the path to the DLL to be injected, and a “—create” argument if the process is not already running (I used notepad.exe and —create). Once loaded in olly, using ctrl+n to bring up the names window, I see all the expected system calls. CreateProcessA, OpenProcess (incase I want to attack one that is already running) (either of those to get a handle of the process I want to inject in), VirtualAllocEx (to allocate memory in the remote process), WriteProcessMemory (to write the name of the bad DLL in the memory I just allocated), GetProcAddress (to find the address of the LoadLibraryA DLL in user space), and CreateRemoteThread (which triggers the call to LoadLibraryA with the malicious DLL as argument). I put breakpoints at all these functions to see each step of the process.
@@ -97,12 +87,6 @@ Check out the stack which contains the arguments for the CreateRemoteThread call
 And viola, the injected DLL can be seen in the modules for notepad in processHacker.
 
 This of course, is only the first step of the rootkitting process. Next is the modification of functionality.
-
-*“Do you know what I really love dude? Cheetahs”*
-
-*“Yea, cheetahs are good!”*
-
-*“Yea, and they’re fast! and pretty sensible too”*
 
 Bibliography:
 
